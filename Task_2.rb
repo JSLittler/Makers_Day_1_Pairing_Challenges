@@ -1,6 +1,7 @@
-def add_hash(argument)
-hash = { a: 1, b: 2 }
-puts hash
+def add_hash(arg)
+hash = { "a" => 1, "b" => 2 }
+hash.each {|k, v| hash[k] = v + 1}
+return hash[arg]
 end
 
-add_hash(hash)
+add_hash("a")
