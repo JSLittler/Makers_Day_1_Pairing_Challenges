@@ -11,3 +11,9 @@ describe 'sort_hash' do
     expect(sort_hash).to eq "c" => 1, "a" => 2, "b" => 5
   end
 end
+
+describe 'sort_and_print_values' do
+  it 'returns "sorted hash values"' do
+    expect(sort_and_print_values).to eq [1, 2, 5]
+  end
+end
